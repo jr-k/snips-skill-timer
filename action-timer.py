@@ -218,6 +218,6 @@ def timerRemove(hermes, intentMessage):
 if __name__ == "__main__":    
 
     with Hermes(MQTT_ADDR) as h:
-        h.subscribe_intent("Tealque:timerRemember", timerRemember)\
-            .subscribe_intent("Tealque:timerRemainingTime", timerRemainingTime)\
+        h.subscribe_intent("jierka:timerRemember", timerRemember)\
+            .subscribe_intent("jierka:timerRemainingTime", timerRemainingTime)\
             .loop_forever()
